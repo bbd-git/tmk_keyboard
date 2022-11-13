@@ -10,12 +10,21 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] __attribute__ ((section (".key
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 #endif
    /* Layer 0: Default Layer */
+  // for mac
+  /*
     [0] = \
     KEYMAP_JP(ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,    MINS, EQL, GRV,BSPC, \
               TAB, Q,   W,   F,   P,   G,   J,   L,   U,   Y,   SCLN, LBRC, RBRC, \
               LGUI,A,   R,   S,   T,   D,   H,   N,   E,   I,   O,    QUOT, BSLS,ENT, \
               LSFT,Z,   X,   C,   V,   B,   K,   M,   COMM,DOT, SLSH, RSFT, UP,  FN8, \
-              LCTL,ZKHK,LCTL,LALT,FN2,     SPC,       FN9 ,RCTL,RALT, FN1,  LEFT,DOWN,RGHT),
+              LCTL,ZKHK,LCTL,LALT,FN2,     SPC,       FN9 ,RCTL,RALT, FN1,  LEFT,DOWN,RGHT),*/
+  // for win
+    [0] = \
+    KEYMAP_JP(ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,    MINS, EQL, GRV,BSPC, \
+              TAB, Q,   W,   F,   P,   G,   J,   L,   U,   Y,   SCLN, LBRC, RBRC, \
+              LCTL,A,   R,   S,   T,   D,   H,   N,   E,   I,   O,    QUOT, BSLS,ENT, \
+              LSFT,Z,   X,   C,   V,   B,   K,   M,   COMM,DOT, SLSH, RSFT, UP,  FN8, \
+              LGUI,ZKHK,LALT,LCTL,FN2,     SPC,       FN9 ,RCTL,RALT, FN1,  LEFT,DOWN,RGHT),
 
     /* Layer 1: HHKB mode (HHKB Fn)
      * ,-----------------------------------------------------------.
@@ -39,7 +48,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 
     [2] = \
     KEYMAP_JP(PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL, \
-              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,F21,F22,F23,F24,TRNS, TRNS, \
+              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGDN,PGUP,END, TRNS,TRNS, TRNS, \
               TRNS,TRNS,TRNS,FN4,FN5,TRNS,LEFT,DOWN,UP,RIGHT,DEL,TRNS,TRNS,ENT, \
               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,BSPC,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS,TRNS, \
               TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     FN9,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS),
@@ -66,7 +75,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
               TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC, \
               LGUI,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,ENT, \
               LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RO,  UP,  FN8, \
-              FN1, ZKHK,LCTL,LALT,FN2,     SPC,      FN3,KANA,RALT,FN1, LEFT,DOWN,RGHT),
+              FN1, ZKHK,LCTL,LALT,MHEN,   SPC,     HENK,KANA,RALT,FN1, LEFT,DOWN,RGHT),
 };
 
 
